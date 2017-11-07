@@ -1,0 +1,14 @@
+{
+  "name": "gridsahoy",
+  "version": "1.0.0",
+  "description": "a simple project exploring css-grids",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cssgrids"
+  ],
+  "author": "hariKarthic",
+  "license": "MIT"
+}
