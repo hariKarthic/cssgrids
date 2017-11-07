@@ -468,7 +468,7 @@ code.snippet{
     color:crimson;
 }
 
-.wrapper:hover> code{
+.wrapper:hover > code{
   display:block;
 }
 .box5:hover > code{
