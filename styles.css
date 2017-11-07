@@ -463,15 +463,18 @@ body{
     grid-row-end: 4; 
 }
 
-.box5 > code{
+code.snippet{
     display: none;
     color:crimson;
 }
 
+.wrapper:hover> code{
+  display:block;
+}
 .box5:hover > code{
     display:block;
 }
-
+/*Grid wall styles*/
 .page-wrap-grid{
     display:grid;
     grid-template-columns: 1fr;
