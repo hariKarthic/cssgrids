@@ -1,0 +1,94 @@
+/*
+* All the GW styles
+*/
+
+@media screen {
+
+    header {
+        background-color: black;
+        text-align: center;
+        color: #fff;
+        /*Just to show y'all that grids can be mixed with flex box*/
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+
+    main {
+        background-color: whitesmoke;
+
+    }
+
+    footer {
+        background-color: ghostwhite;
+        border: 1px solid #ccc;
+        text-align: center;
+        color: #000;
+    }
+
+    .main-grid-wrap {
+        display: grid;
+        grid-row-gap: 6px;
+        grid-template-columns: 1fr; /*Explicity Columns : Takes one unit */
+        grid-template-rows: [grid-header-start] 150px [grid-content-start] auto [grid-footer-start] 50px; /*Explicit Rows : 150 for first row and 50 for last row, auto for rest*/
+    }
+
+    .grid-wrap > div {
+        background-color: lightgrey;
+        border: 1px solid gray;
+
+    }
+
+    .product-wrap {
+        text-align: center;
+        min-width: 30px;
+        min-height: 30px;
+    }
+
+}
+
+@media screen and(max-device-width: 375px) {
+
+    .grid-wrap {
+        display: grid;
+        grid-row-gap: 6px;
+        grid-column-gap: 6px;
+        background-color: whitesmoke;
+        grid-template-columns: [grid-column-implicit] repeat(1, 90%);
+        grid-auto-rows: minmax(30px, auto);
+        justify-items: stretch;
+
+    }
+
+}
+
+@media (min-device-width: 720px ) {
+
+    .grid-wrap {
+        display: grid;
+        grid-row-gap: 6px;
+        grid-column-gap: 6px;
+        background-color: whitesmoke;
+        grid-template-columns: [grid-column-implicit] repeat(3, 32.6%);
+        grid-auto-rows: minmax(30px, auto);
+        justify-items: stretch;
+
+    }
+
+}
+
+@media screen and (min-device-width: 1024px) {
+
+    .grid-wrap {
+        display: grid;
+        grid-row-gap: 6px;
+        grid-column-gap: 6px;
+        background-color: whitesmoke;
+        grid-template-columns: [grid-column-implicit] repeat(4, 24.6%);
+        grid-auto-rows: minmax(30px, auto);
+        justify-items: stretch;
+
+    }
+
+}
