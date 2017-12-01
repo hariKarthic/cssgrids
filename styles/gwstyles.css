@@ -34,6 +34,17 @@
         grid-template-rows: [grid-header-start] 150px [grid-content-start] auto [grid-footer-start] 50px; /*Explicit Rows : 150 for first row and 50 for last row, auto for rest*/
     }
 
+    .grid-wrap {
+        display: grid;
+        grid-row-gap: 6px;
+        grid-column-gap: 6px;
+        background-color: whitesmoke;
+        grid-template-columns: [grid-column-implicit] 1fr;
+        grid-auto-rows: minmax(30px, auto);
+        justify-items: stretch;
+
+    }
+
     .grid-wrap > div {
         background-color: lightgrey;
         border: 1px solid gray;
@@ -48,22 +59,9 @@
 
 }
 
-@media screen and(max-device-width: 375px) {
 
-    .grid-wrap {
-        display: grid;
-        grid-row-gap: 6px;
-        grid-column-gap: 6px;
-        background-color: whitesmoke;
-        grid-template-columns: [grid-column-implicit] repeat(1, 90%);
-        grid-auto-rows: minmax(30px, auto);
-        justify-items: stretch;
 
-    }
-
-}
-
-@media (min-device-width: 720px ) {
+@media (min-width: 576px) {
 
     .grid-wrap {
         display: grid;
@@ -78,7 +76,23 @@
 
 }
 
-@media screen and (min-device-width: 1024px) {
+@media (min-width: 768px) {
+
+    .grid-wrap {
+        display: grid;
+        grid-row-gap: 6px;
+        grid-column-gap: 6px;
+        background-color: whitesmoke;
+        grid-template-columns: [grid-column-implicit] repeat(4, 24.6%);
+        grid-auto-rows: minmax(30px, auto);
+        justify-items: stretch;
+
+    }
+
+}
+
+
+@media (min-width: 1200px) {
 
     .grid-wrap {
         display: grid;
