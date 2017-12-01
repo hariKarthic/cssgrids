@@ -1,0 +1,46 @@
+/*
+* -------------------
+* Custom Styles starts
+* -------------------
+*/
+
+body {
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+
+    display: grid;
+    grid-template-rows: [grid-header-row] 250px [grid-content-row] auto [grid-footer-row] 150px;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+
+.wrapper div {
+    background-color: black;
+    border: 1px solid red;
+    padding: 5px;
+    color: #fff;
+    text-align: left;
+}
+
+.box5 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+code.snippet {
+    display: none;
+    color: crimson;
+}
+
+.wrapper:hover > code {
+    display: block;
+}
+
+.box5:hover > code {
+    display: block;
+}
