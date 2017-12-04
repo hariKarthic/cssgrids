@@ -69,7 +69,7 @@
         grid-row-gap: 6px;
         grid-column-gap: 6px;
         background-color: whitesmoke;
-        grid-template-columns: [grid-column-implicit] repeat(3, 32.6%);
+        grid-template-columns: [grid-column-implicit] repeat(2, 49.6%);
         grid-auto-rows: minmax(30px, auto);
         justify-items: stretch;
 
