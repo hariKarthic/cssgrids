@@ -1,4 +1,9 @@
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
 /*
 * All the GW styles
 */
@@ -60,8 +65,6 @@
 
 }
 
-
-
 @media (min-width: 576px) {
 
     .grid-wrap {
@@ -92,7 +95,6 @@
 
 }
 
-
 @media (min-width: 1200px) {
 
     .grid-wrap {
@@ -106,4 +108,30 @@
 
     }
 
+}
+
+/*
+*Product page styles
+*/
+
+.productpage-wrap {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(20px, auto) auto minmax(50px, auto);
+    grid-row-gap: 6px;
+    text-align: center;
+}
+
+.productpage-titlewrap {
+    text-align: center;
+}
+
+.productpage-image {
+    justify-self: center;
+}
+
+.productpage-pickers_color {
+    width: 24px;
+    height: 24px;
+    border:1px solid black;
 }

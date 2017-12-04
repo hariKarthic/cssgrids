@@ -3,8 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <title>Experiments with CSS Grids - Product Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel='stylesheet' href='styles/normalize.css'/>
+    <link rel='stylesheet' href='styles/styles.css'/>
 </head>
 <body>
-
+<header class="headercontent">
+    <h2>Experiments with CSS-Grids</h2>
+    <p>...The quintessential product page!</p>
+</header>
+<main>
+    <form action="/cart" id="pdpform">
+        <section class="productpage-wrap">
+            <div class="productpage-titlewrap">
+                <h1>Awesome Product</h1>
+                <h4>Doesnt get any more awesome than this...!</h4>
+                <p class="deal-section">
+                    Get your deals buddy!!!
+                </p>
+            </div>
+            <img src="/assets/img150x300.jpeg" alt="awesomatic product" class="productpage-image" srcset="">
+            <div class="producpage-pickers">
+                <label>Select a color
+                    <select>
+                        <option value="black">Black</option>
+                        <option value="Red">Red</option>
+                        <option value="blue">Blue</option>
+                    </select></label>
+            </div>
+            <div class="product-pricedetail">
+                <p>$9.99 <span>retail price</span></p>
+                <p>Get it now, or regret it !</p>
+                <button type="submit">Add to Cart</button>
+            </div>
+        </section>
+    </form>
+</main>
+<footer>
+    <p>Learn more at <a title="visit grid by example" href="https://gridbyexample.com/">Grid By Example</a></p>
+</footer>
 </body>
 </html>
